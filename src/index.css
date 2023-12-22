@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-["Poppins",sans-serif];
+    }
+    li{
+        @apply px-4;
+        @apply cursor-pointer
+    }
+  
+}
+
+@layer utilities {
+    .shadow-glow-linkedin:hover {
+      filter: drop-shadow(1px 1px 5px #06699e);
+    }
+    .shadow-glow-github:hover {
+      filter: drop-shadow(1px 1px 5px #2a9c8e);
+    }
+    .shadow-glow-mail:hover {
+      filter: drop-shadow(1px 1px 5px #cb3541);
+    }
+    .shadow-glow-resume:hover {
+      filter: drop-shadow(0px 0px 5px #DB2777);
+    }
+  }
+  /* #cb3541   */
+
+  .content-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+  .content-div:hover{
+    background-image: linear-gradient( to right,rgba(112,157,255,0.8), hsla(242,74%,61%,0.8))!important;
+  }
