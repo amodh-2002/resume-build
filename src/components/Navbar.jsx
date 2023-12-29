@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         {/* logo  */}
         <div className="logo">
-        <Link to='home' smooth={true} duration={500}>
+        <Link style={{cursor:"pointer"}} to='home' smooth={true} duration={500}>
         <img className='w-[120px]' src={Logo} alt="Logo" />
         </Link>
             
