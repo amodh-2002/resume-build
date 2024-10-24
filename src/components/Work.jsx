@@ -19,7 +19,7 @@ const Work = () => {
         </div>
 
 {/* container for projects */}
-<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           
           {/* Gird Item */}
           {project.map((item, index) => (
@@ -35,15 +35,16 @@ const Work = () => {
         {item.name}
       </span>
       <div className="pt-8 text-center ">
-        {/* eslint-disable-next-line */}
-        <a href={item.github} target="_blank">
-          <button
-            className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-          >
-            Code
-          </button>
-        </a>
+        {item.github && (
+          <a href={item.github} target="_blank" rel="noopener noreferrer">
+            <button
+              className="text-center rounded-lg px-4 py-3 m-2
+                         bg-white text-gray-700 font-bold text-lg"
+            >
+              Code
+            </button>
+          </a>
+        )}
         {/* eslint-disable-next-line */}
         <a href={item.live} target="_blank">
           <button
