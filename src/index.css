@@ -4,14 +4,28 @@
 @tailwind utilities;
 
 @layer base{
+    html {
+        @apply scroll-smooth overflow-x-hidden;
+    }
     body{
-        @apply font-["Poppins",sans-serif];
+        @apply font-["Poppins",sans-serif] overflow-x-hidden text-base;
     }
     li{
-        @apply px-4;
-        @apply cursor-pointer
+        @apply cursor-pointer;
     }
-  
+    #root {
+        @apply overflow-x-hidden;
+    }
+}
+
+@layer components {
+    .section-padding {
+        @apply py-16 px-6 sm:px-8;
+    }
+    
+    .input-field {
+        @apply bg-[#ccd6f6] p-4 rounded-md outline-none text-base mb-4;
+    }
 }
 
 @layer utilities {

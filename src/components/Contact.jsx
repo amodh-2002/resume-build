@@ -30,12 +30,12 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full min-h-screen bg-[#0a192f] flex justify-center items-center py-16 overflow-hidden"
     >
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col max-w-[600px] w-full mx-4 md:mx-8"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
@@ -48,7 +48,7 @@ const Contact = () => {
         <input
           required
           autoComplete="name"
-          className="bg-[#ccd6f6] p-2 rounded-md outline-none"
+          className="bg-[#ccd6f6] p-4 rounded-md outline-none text-base mb-4"
           type="text"
           placeholder="Your Name"
           name="from_name"
@@ -56,14 +56,14 @@ const Contact = () => {
         <input
           required
           autoComplete="email"
-          className="my-4 p-2 bg-[#ccd6f6] rounded-md outline-none"
+          className="bg-[#ccd6f6] p-4 rounded-md outline-none text-base mb-4"
           type="email"
           placeholder="Your Email"
           name="from_email"
         />
         <textarea
           required
-          className="bg-[#ccd6f6] p-2 rounded-md text-black outline-none"
+          className="bg-[#ccd6f6] p-4 rounded-md outline-none text-base"
           name="message"
           rows="10"
           placeholder="Your Message"

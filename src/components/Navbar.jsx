@@ -2,52 +2,54 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo-AD.png";
 import { Link } from "react-scroll";
 import Resume from "./Amodh_BH_Resume1.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleClick = () => {
-    setNav(!nav);
-  };
+  const handleClick = () => setNav(!nav);
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      {/* logo  */}
-      <div style={{ cursor: "pointer" }} className="logo"></div>
-      {/* menu  */}
-      <ul className=" hidden md:flex ">
-        <li>
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 md:px-8 bg-[#0a192f] text-gray-300 z-50">
+      <div>
+        <h1 className="text-2xl sm:text-3xl font-bold text-pink-600">AB</h1>
+      </div>
+
+      {/* Menu */}
+      <ul className="hidden md:flex gap-8 items-center">
+        <li className="hover:text-pink-600">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className="hover:text-pink-600">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className="hover:text-pink-600">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className="hover:text-pink-600">
           <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li>
+        <li className="hover:text-pink-600">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
-      {/* hamburger  */}
+
+      {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
       </div>
-      {/* mobile-menu  */}
+
+      {/* Mobile menu */}
       <ul
         className={
           !nav
@@ -55,34 +57,35 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
-      {/* social-icons  */}
-      <div className="hidden md:flex fixed flex-col top-[35%] left-0 bg-[#152134e3] w-[90px] py-4 rounded-md">
+
+      {/* Social icons */}
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-40">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-2">
             <a

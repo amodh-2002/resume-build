@@ -4,17 +4,17 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div name="home" className="w-full h-screen bg-[#0a192f] overflow-hidden">
       {/* container  */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hi, My Name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+      <div className="max-w-[1000px] mx-auto px-4 md:px-8 flex flex-col justify-center h-full">
+        <p className="text-pink-600 text-lg mb-2">Hi, My Name is</p>
+        <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-[#ccd6f6] mb-2">
           Amodh BH
         </h1>
-        <h2 className="text-3xl sm:text-6xl font-bold text-[#8892b0]">
+        <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-[#8892b0] mb-4">
           Software Engineer | DevOps Enthusiast
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[1200px]">
+        <p className="text-[#8892b0] py-4 max-w-[700px] text-sm sm:text-base">
           As a Software Engineer with a strong focus on DevOps, I streamline
           development and deployment processes by building scalable applications
           and automating infrastructure. I specialize in optimizing CI/CD
