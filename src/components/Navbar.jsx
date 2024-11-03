@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 md:px-8 bg-[#0a192f] text-gray-300 z-50">
       <div>
-        <h1 className="text-2xl sm:text-3xl font-bold text-pink-600">AB</h1>
+        <Link to="home" smooth={true} duration={500}>
+          <h1 className="text-2xl sm:text-3xl font-bold text-pink-600 cursor-pointer">
+            AB
+          </h1>
+        </Link>
       </div>
 
       {/* Menu */}
