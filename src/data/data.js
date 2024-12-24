@@ -1,6 +1,7 @@
 import WorkIm from "../assets/projects/netflix.png";
 import WaterMarkly from "../assets/projects/watermarkly.png";
 import Blogs from "../assets/projects/blogs.png";
+import Chambers from "../assets/projects/chambers.png";
 
 export const data = [
   {
@@ -19,9 +20,16 @@ export const data = [
   },
   {
     id: 3,
+    name: "Chamber: A law firm website template",
+    image: Chambers,
+    github: "",
+    live: "https://chambers.amobitsx7.tech/",
+  },
+  {
+    id: 4,
     name: "Netflix Clone with Firebase Integration",
     image: WorkIm,
     github: "https://github.com/amodh-2002/netflix-with-firebase-clone",
-    live: "https://netflix-with-firebase-clone.vercel.app/",
+    live: "https://nettflix.amobitsx7.tech",
   },
 ];
