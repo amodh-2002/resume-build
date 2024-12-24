@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 md:px-8 bg-[#0a192f] text-gray-300 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div>
         <Link to="home" smooth={true} duration={500}>
           <h1 className="text-2xl sm:text-3xl font-bold text-pink-600 cursor-pointer">
@@ -20,28 +20,28 @@ const Navbar = () => {
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex gap-8 items-center">
-        <li className="hover:text-pink-600">
+      <ul className="hidden md:flex items-center">
+        <li className="hover:text-pink-600 px-2 md:px-3 text-sm lg:text-base whitespace-nowrap">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="hover:text-pink-600">
+        <li className="hover:text-pink-600 px-2 md:px-3 text-sm lg:text-base whitespace-nowrap">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="hover:text-pink-600">
+        <li className="hover:text-pink-600 px-2 md:px-3 text-sm lg:text-base whitespace-nowrap">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="hover:text-pink-600">
+        <li className="hover:text-pink-600 px-2 md:px-3 text-sm lg:text-base whitespace-nowrap">
           <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className="hover:text-pink-600">
+        <li className="hover:text-pink-600 px-2 md:px-3 text-sm lg:text-base whitespace-nowrap">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>

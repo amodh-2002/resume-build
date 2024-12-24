@@ -26,17 +26,24 @@ const About = () => {
             <h1>Amodh BH</h1>
           </div>
           <div className="text-base sm:text-lg px-2 sm:px-0">
-            <p className="text-lg text-justify">
+            <p className="text-lg text-justify my-2">
               I'm a Software Engineer passionate about DevOps, cloud
               technologies, and web development. I focus on streamlining the
-              software development lifecycle with tools like Docker, Kubernetes,
-              and cloud platforms such as AWS. My expertise spans automating
-              infrastructure, optimizing CI/CD pipelines, and ensuring efficient
-              application delivery. In addition, I enjoy creating responsive and
-              interactive web applications using React, JavaScript, and modern
-              CSS frameworks. Outside of tech, I’m a huge Formula 1 fan, drawn
-              to the sport's precision and innovation, much like my approach to
-              continuous improvement in software development.
+              software development lifecycle with tools like{" "}
+              <b> Docker, Kubernetes, and cloud platforms such as AWS .</b>
+            </p>
+            <hr />
+            <p className="text-lg text-justify my-2">
+              My expertise spans automating infrastructure, optimizing CI/CD
+              pipelines, and ensuring efficient application delivery. In
+              addition, I enjoy creating responsive and interactive web
+              applications using React, JavaScript, and modern CSS frameworks.
+            </p>
+            <hr />
+            <p className="text-lg text-justify my-2">
+              Outside of tech, I’m a huge Formula 1 fan, drawn to the sport's
+              precision and innovation, much like my approach to continuous
+              improvement in software development.
             </p>
           </div>
         </div>
